@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+   var canvas = document.querySelector("canvas");
+   var context = canvas.getContext("2d");
+
+   context.fillStyle = "black";
+   context.fillRect(0, 0, 600, 400);
+
+   // cabeça
+   context.fillStyle = "darkgreen";
+   context.fillRect(300-175, 50, 350, 300);
+
+   // olho 1
+   context.fillStyle = "black";
+   context.fillRect(50 + 125, 60 + 50, 90, 90);
+
+   // olho 2
+   context.fillStyle = "black";
+   context.fillRect(210 + 125, 60 + 50, 90, 90);
+
+   // nariz
+   context.fillStyle = "black";
+   context.fillRect(140 + 125, 150 + 50, 70, 100);
+
+   // boca 1
+   context.fillStyle = "black";
+   context.fillRect(100 + 125, 190 + 50, 40, 110);
+
+   // boca 2
+   context.fillStyle = "black";
+   context.fillRect(210 + 125, 190 + 50, 40, 110);
+</script>

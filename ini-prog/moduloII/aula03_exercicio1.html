@@ -1,0 +1,32 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var canvas = document.querySelector('canvas');
+    var context = canvas.getContext('2d');
+
+    context.fillStyle = 'grey';
+    context.fillRect(0, 0, 600, 400);
+
+    var desenhar = false;
+
+    function desenhaCirculo(evento) {
+
+        var x = evento.pageX - canvas.offsetLeft;
+        var y = evento.pageY - canvas.offsetTop;
+        context.fillStyle = 'blue';
+        context.beginPath();
+        context.arc(x, y, 10, 0, 2 * 3.14);
+        context.fill();
+//        console.log(x + ',' + y);
+
+    }
+
+    canvas.onmousedown = function(evento) {
+        desenhar = true;
+        desenhaCirculo(evento);
+    };
+    canvas.onmouseup = function() { desenhar = false; };
+    canvas.onmousemove = function desenha(evento) {
+       if (desenhar) desenhaCirculo(evento);
+    };
+</script>

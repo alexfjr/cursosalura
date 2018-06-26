@@ -1,0 +1,33 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+   var canvas = document.querySelector('canvas');
+   var context = canvas.getContext('2d');
+   context.fillStyle = 'lightgray';
+   context.fillRect(0, 0, 600, 400);
+
+   var raio = 20;
+   var aumento = 1;
+
+   function desenhaCirculo(x, y, raio, cor) {
+      context.fillStyle = cor;
+      context.beginPath();
+      context.arc(x, y, raio, 0, 2 * Math.PI);
+      context.fill();
+   }
+
+   function limpaCanvas() {
+      context.clearRect(0, 0, 600, 400);
+   }
+
+   function atualizaTela() {
+      limpaCanvas();
+
+      raio = raio + aumento;
+      if (raio >= 30 || raio <= 20) aumento = aumento * (-1);
+
+      desenhaCirculo(300, 200, raio, "red");
+   }
+
+   setInterval(atualizaTela,1000/60);
+</script>

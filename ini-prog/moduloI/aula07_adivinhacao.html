@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<script>
+   function showln(msg) {
+      document.write(msg+"<br />");
+   }
+
+   function tooHigh(chances) {
+      if (chances > 1) {
+         showln("Muito alto, tente outra vez!");
+      } else {
+         showln("Hahaha, você perdeu!");
+      }
+   }
+
+   function tooLow(chances) { 
+      if (chances > 1) {
+         showln("Muito baixo, tente outra vez!");
+      } else {
+         showln("Hahaha, você perdeu!");
+      }
+   }
+
+   var numero = Math.round(Math.random()*10);
+
+   for (var i = 3; i > 0; i--) {
+      var aux = parseInt(prompt("Digite um número: "));
+
+      if (aux == numero) {
+          showln("Ahhh safado, você acertou!");
+          break;
+      } else if (aux > numero) {
+         tooHigh(i);
+      } else {
+         tooLow(i);
+      }
+   }
+
+   showln("O número pensado foi: "+numero);
+   showln("Fim!");
+</script>

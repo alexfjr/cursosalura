@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+   var canvas = document.querySelector("canvas");
+   var context = canvas.getContext("2d");
+
+   /*
+   context.fillStyle = "black";
+   context.fillRect(0, 0, 600, 400);
+   */
+
+   context.beginPath();
+   context.moveTo(50, 50);
+   context.lineTo(400, 400);
+   context.lineTo(50, 400);
+   context.fill();
+
+   context.fillStyle = "white"; 
+   context.beginPath();
+   context.moveTo(100, 175);
+   context.lineTo(275, 350);
+   context.lineTo(100, 350);
+   context.fill();
+</script>
