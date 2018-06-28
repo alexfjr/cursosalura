@@ -1,0 +1,2 @@
+zip -qr backup.zip ~/Documents/Learning/curso-linux/moduloII/workspace
+echo "Backup finalizado com sucesso"
