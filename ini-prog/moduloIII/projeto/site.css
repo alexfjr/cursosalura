@@ -136,3 +136,8 @@ font-style: italic;
 h2 {
    clear: both;
 }
+
+cite {
+   float: right;
+   font-style: italic;
+}
