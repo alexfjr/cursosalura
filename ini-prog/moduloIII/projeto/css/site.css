@@ -61,8 +61,8 @@ p {
 }
 
 .minha-foto, .navegacao-site {
-    border-left: 10px solid black;
-    border-bottom: 10px solid black;
+   border-left: 10px solid black;
+   border-bottom: 10px solid black;
 }
 
 main {
@@ -109,7 +109,7 @@ strong {
 }
 
 em {
-font-style: italic;
+   font-style: italic;
 }
 
 .subtitulo-texto {
@@ -137,22 +137,23 @@ font-style: italic;
 }
 
 .icones-redes-sociais a {
-    width: 40px;
-    height: 40px;
-    display: block;
-    text-indent: -99999px;
+   width: 40px;
+   height: 40px;
+   display: block;
+   text-indent: -99999px;
 }
 
 .github {
-    background-image: url(github.png);
+   background-image: url(../img/github.png);
 }
 
 .twitter {
-     background-image: url(twitter.png);
+   background-image: url(../img/twitter.png);
+   background-image: url(../img/twitter.png);
 }
 
 .linkedin {
-    background-image: url(linkedin.png);
+   background-image: url(../img/linkedin.png);
 }
 
 .citacao-fiat {
