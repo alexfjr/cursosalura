@@ -68,6 +68,7 @@ p {
 main {
    float: left;
    width: 85%;
+   padding-bottom: 80px;
 }
 
 .container {
@@ -80,6 +81,9 @@ main {
    background-color: #000;
    color: #F2FFFC;
    clear: both;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
 }
 
 main a {
