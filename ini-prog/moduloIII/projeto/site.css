@@ -123,3 +123,15 @@ font-style: italic;
 .linkedin {
     background-image: url(linkedin.png);
 }
+
+.citacao-fiat {
+   float: right;
+}
+
+.citacao-petrobras {
+   float: left;
+}
+
+h2 {
+   clear: both;
+}
