@@ -40,15 +40,42 @@ p {
    margin: 20px 40px;
 }
 
+.minha-foto {
+   float: right;
+   width: 15%;
+   box-sizing: border-box;
+}
+
 .navegacao-site {
    text-align: center;
    background-color: #3C1D3D;
    color: #F2FFFC;
+   clear: right;
+   float: right;
+   width: 13%;
+   box-sizing: border-box;
+}
+
+.minha-foto, .navegacao-site {
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+main {
+   float: left;
+   width: 85%;
+}
+
+.container {
+   width: 720px;
+   margin: auto;
+   padding: 30px 0;
 }
 
 .rodape-pagina {
    background-color: #000;
    color: #F2FFFC;
+   clear: both;
 }
 
 main a {
@@ -62,12 +89,6 @@ main a {
 
 .citacao-bio, .navegacao-site, .rodape-pagina {
    padding: 20px;
-}
-
-.container {
-   width: 720px;
-   margin: auto;
-   padding: 30px 0;
 }
 
 .navegacao-site h1 {
@@ -85,6 +106,7 @@ font-style: italic;
 
 .subtitulo-texto {
    font-size: 30px;
+   clear: both;
 }
 
 .icones-redes-sociais li {
@@ -131,10 +153,6 @@ font-style: italic;
 
 .citacao-petrobras {
    float: left;
-}
-
-h2 {
-   clear: both;
 }
 
 cite {
