@@ -42,8 +42,10 @@ p {
 
 .minha-foto {
    float: right;
-   width: 15%;
    box-sizing: border-box;
+   position: absolute;
+   top: 0;
+   right: 0;
 }
 
 .navegacao-site {
@@ -52,8 +54,10 @@ p {
    color: #F2FFFC;
    clear: right;
    float: right;
-   width: 13%;
+   width: 15%;
    box-sizing: border-box;
+   position: relative;
+   top: 310px;
 }
 
 .minha-foto, .navegacao-site {
