@@ -45,7 +45,7 @@ body {
 	margin-bottom: 0;
 }
 
-#depoimentos .carousel {
+#testimonies .carousel {
     width: 80%;
     margin: 0 auto;
 }
@@ -55,7 +55,7 @@ body {
     width: 100%;
 }
 
-.titulo-depoimentos {
+.title-testimonies {
 	background-color: #0275D8;
 	padding-top: 25px;
 	padding-bottom: 25px;
